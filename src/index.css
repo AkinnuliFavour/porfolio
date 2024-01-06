@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-radial {
+    background: 
+        radial-gradient(ellipse at top, #3F64EA, #0D0D0D, transparent) top left / 30% 30%,
+        radial-gradient(ellipse at top, #E93F40, #0D0D0D, transparent) top center / 50% 50%,
+        radial-gradient(ellipse at top, #FFB800, #0D0D0D, transparent) top right / 30% 30%,
+        linear-gradient(90deg, #0D0D0D, #0D0D0D) bottom right;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%; */
+    background-position: top left, top center, top right, bottom right;
+}
