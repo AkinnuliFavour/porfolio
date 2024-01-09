@@ -1,20 +1,13 @@
+import Navbar from "../components/Navbar"
+
 const Home = () => {
   return (
     <main className="w-full text-[#808080]">
-        <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full h-[550px] flex flex-col items-center">
-          <nav className="w-4/6 h-[60px] px-4 mt-4 bg-white opacity-25 hidden lg:flex justify-between text-lg font-medium rounded-xl">
-            <ul className="flex items-center gap-[40px] text-[#3F64EA] text-opacity-[43%]">
-              <li>About</li>
-              <li>Contact</li>
-              <li>Tech Stack</li>
-            </ul>
-            <div className="flex items-center gap-[24px]">
-              <img src="/assets/LinkedIn.png" alt="" />
-              <img src="/assets/X.png" alt="" />
-              <img src="/assets/Github.svg" alt="" />
-            </div>
-          </nav>
-          <section className="mb-[245px] mt-[32px] lg:hidden">
+        <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full h-[550px] flex flex-col">
+          <section className="px-[18px] lg:px-[244px]">
+            <Navbar />
+          </section>
+          <section className="flex justify-center mb-[245px] mt-[32px] lg:hidden">
               <img src="/assets/logo-white.png" alt="" />
           </section>
           <section className="lg:mt-[121px] flex justify-center">
