@@ -16,6 +16,33 @@ const Projects = () => {
             </section>
             <hr className="w-full text-black opacity-10 mt-[60px]"/>
         </div>
+        <section className="px-[18px] lg:px-[244px] mt-[60px]">
+            <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
+                <div className="py-8">
+                    <div className="mb-[16px]"><img src="/assets/Logo.png" alt="" /></div>
+                    <div className="">
+                    <p className="text-[#181818] text-[32px] font-bold mb-[16px]">Subbi</p>
+                    <p className="text-[16px] font-normal">Subbi is a side project that I’ve built to help me keep track of how much I spend on subscriptions and also to prevent the “accidental” bill after a 14-day trail ends. It helps you keep track of bills like Netflix, Spotify, Xbox Game Pass, Bus Card, Bank Cards, and many more.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/assets/Subbi.png" alt="" className="hidden lg:block"/>
+                </div>
+            </section>
+
+            <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
+                <div className="py-8">
+                    <div className="mb-[16px]"><img src="/assets/React.png" alt="" /></div>
+                    <div>
+                    <p className="text-[#181818] text-[32px] font-bold mb-[16px]">React Documentation</p>
+                    <p className="text-[16px] font-normal">With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers, Improved my ability to write better PR requests, and as a side effect, I now know more about the Arabic grammar.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/assets/React Docs.png" alt="" className="hidden lg:block"/>
+                </div>
+            </section>
+        </section>
     </main>
   )
 }
