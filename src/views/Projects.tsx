@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
 const Projects = () => {
@@ -42,7 +43,17 @@ const Projects = () => {
                     <img src="/assets/React Docs.png" alt="" className="hidden lg:block"/>
                 </div>
             </section>
+
+            <section className=" bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center lg:grid-cols-2 mb-[32px] rounded-[32px] ">
+                <img src="/assets/Stars.png" alt="" />
+                <h3 className="text-[#181818] text-[20px] text-center lg:text-[32px] font-bold mt-[11px]">YOUR PROJECT GOES HERE</h3>
+                <p className="text-[16px] font-normal mt-[16px] text-center">Let’s turn your idea into a visual reality</p>
+                <div className="flex items-center w-full lg:w-[201px] mt-[34px] lg:mt-[90px]">
+                  <button className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"> Get in touch</button>
+                </div>
+            </section>
         </section>
+        <Footer />
     </main>
   )
 }

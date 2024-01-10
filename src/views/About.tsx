@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 const About = () => {
   return (
@@ -30,6 +31,7 @@ const About = () => {
                 <button>Get in touch</button>
             </section> */}
         </section>
+        <Footer />
     </main>
   )
 }

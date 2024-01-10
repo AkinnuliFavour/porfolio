@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 const Contact = () => {
   return (
@@ -16,6 +17,7 @@ const Contact = () => {
             </section>
             <hr className="w-full text-black opacity-10 mt-[60px]"/>
         </div>
+        <Footer />
     </main>
   )
 }
