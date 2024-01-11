@@ -4,7 +4,8 @@ const Footer = () => {
     <footer className="w-full bg-[url('/assets/background-gradient-bottom.png')] bg-center h-[550px] flex justify-center items-end mt-[350px] lg:mt-0">
         <div className="w-full lg:w-[68%] flex flex-col-reverse lg:flex-row justify-between py-[32px] px-[16px] lg:px-6">
             <div className="flex flex-col">
-            <img src="/assets/thanks.png" alt="" />
+            <img src="/assets/favour-logo-black.svg" alt="" className="h-[60px] w-[90px]"/>
+            <p className="text-black text-[14px] font-medium mt-[16px]">Thanks for stopping by ッ</p>
             <p className="mt-[48px] lg:mt-[93px]"> ©️2024 Akinnuli Favour. All rights reserved</p>
             </div>
             <div className="flex flex-col-reverse lg:flex-row gap-[40px] lg:gap-[120px] mb-[48px] lg:mb-0">

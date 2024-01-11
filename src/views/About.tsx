@@ -8,7 +8,7 @@ const About = () => {
                 <Navbar />
            </section>
             <section className="flex justify-center mb-[86px] mt-[32px] lg:hidden">
-              <img src="/assets/logo-white.png" alt="" />
+              <img src="/assets/favour-logo-white.svg" alt="" />
             </section>
             <section className="px-[16px] lg:px-[244px] lg:mt-[121px]">
                 <h2 className="text-[48px] lg:text-[70px] font-extrabold text-[#181818]">A little bit about me</h2>
@@ -27,8 +27,8 @@ const About = () => {
                 <p className="text-[18px] mt-[60px]">Feel free to reach out via e-mail, or follow me on Twitter. Want to see where I’ve worked? Check out my Resume, or Connect with me on LinkedIn.</p>
             </section>
             <section className="flex flex-col justify-center items-center">
-              <section className="h-[322.28px] lg:h-[443px] bg-black lg:w-[344px] w-[250px] px-[44px] pt-[68.9px] pb-[68.3px] rounded-[10.95px]">
-                  <img src="/assets/favour.jpg" alt="" className="w-[256.19px] rounded-full"/>
+              <section className="h-[322.28px] lg:h-[443px] lg:w-[344px] w-[250px] px-[44px] pt-[68.9px] pb-[68.3px] rounded-[10.95px]">
+                  <img src="/assets/favour.jpg" alt="" className="w-[256.19px] rounded-xl"/>
               </section>
               <div className="flex items-center lg:w-[201px] mt-[34px] lg:mt-[100px]">
                 <button className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white hidden lg:block"> Get in touch</button>

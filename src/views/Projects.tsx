@@ -9,7 +9,7 @@ const Projects = () => {
                 <Navbar />
            </section>
             <section className="flex justify-center mb-[86px] mt-[32px] lg:hidden">
-              <img src="/assets/logo-white.png" alt="" />
+              <img src="/assets/favour-logo-white.svg" alt="" />
             </section>
             <section className="px-[16px] lg:px-[244px] lg:mt-[121px]">
                 <h2 className="text-[48px] lg:text-[70px] font-extrabold text-[#181818]">Projects</h2>

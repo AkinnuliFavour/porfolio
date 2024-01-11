@@ -9,7 +9,7 @@ const Home = () => {
             <Navbar />
           </section>
           <section className="flex justify-center mb-[245px] mt-[32px] lg:hidden">
-              <img src="/assets/logo-white.png" alt="" />
+              <img src="/assets/favour-logo-white.svg" alt="" />
           </section>
           <section className="lg:mt-[121px] flex justify-center">
             <section className="w-full px-[16px] lg:max-w-[65%] lg:px-0 flex flex-col">
