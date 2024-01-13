@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
@@ -8,9 +9,9 @@ const Home = () => {
           <section className="px-[18px] lg:px-[244px]">
             <Navbar />
           </section>
-          <section className="flex justify-center mb-[245px] mt-[32px] lg:hidden">
+          <Link to='/' className="flex justify-center mb-[245px] mt-[32px] lg:hidden">
               <img src="/assets/favour-logo-white.svg" alt="" />
-          </section>
+          </Link>
           <section className="lg:mt-[121px] flex justify-center">
             <section className="w-full px-[16px] lg:max-w-[65%] lg:px-0 flex flex-col">
               <h2 className="lg:hidden text-[48px] font-extrabold">Hi 👋</h2>
