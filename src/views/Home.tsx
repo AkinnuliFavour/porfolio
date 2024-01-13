@@ -23,7 +23,7 @@ const Home = () => {
             </section>
          </section>
         </div>
-         <section className="flex flex-col justify-center items-center">
+         <section className="flex flex-col justify-center items-center mt-[137px] lg:mt-0">
             <section className="mt-[229px] w-full lg:max-w-[65%] px-[16px]">
                   <p className="mb-[16px] lg:mb-[32px] font-bold text-[32px] lg:text-[48px] text-[#181818]">Selected Work</p>
                   <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
