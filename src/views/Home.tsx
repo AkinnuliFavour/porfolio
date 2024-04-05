@@ -27,16 +27,16 @@ const Home = () => {
          <section className="flex flex-col justify-center items-center mt-[137px] lg:mt-0">
             <section className="mt-[229px] w-full lg:max-w-[65%] px-[16px]">
                   <p className="mb-[16px] lg:mb-[32px] font-bold text-[32px] lg:text-[48px] text-[#181818]">Selected Work</p>
-                  <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
+                  <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]">
                     <div className="py-8">
-                      <div className="mb-[16px]"><img src="/assets/Logo.png" alt="" /></div>
+                      <div className="mb-[16px]"><img src="/assets/logo.ico" alt="" className="w-24 rounded-lg"/></div>
                       <div className="">
-                        <p className="text-[#181818] text-[32px] font-bold mb-[16px]">Subbi</p>
-                        <p className="text-[16px] font-normal">Subbi is a side project that I’ve built to help me keep track of how much I spend on subscriptions and also to prevent the “accidental” bill after a 14-day trail ends. It helps you keep track of bills like Netflix, Spotify, Xbox Game Pass, Bus Card, Bank Cards, and many more.</p>
+                        <p className="text-[#181818] text-[32px] font-bold mb-[16px]">Notely</p>
+                        <p className="text-[16px] font-normal">Notely is a side project that I’ve built to help me keep track and manage my tasks/activities for a specific period of time. It helps you keep track of taks in differrent important categories like home tasks, business tasks, personal tasks, e.t.c</p>
                       </div>
                     </div>
-                    <div>
-                      <img src="/assets/Subbi.png" alt="" className="hidden lg:block"/>
+                    <div className="flex justify-center py-8">
+                      <img src="/assets/notely.png" alt="" className="hidden lg:block w-2/3"/>
                     </div>
                   </section>
                   <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
