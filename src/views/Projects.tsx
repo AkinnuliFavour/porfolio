@@ -18,6 +18,7 @@ const Projects = () => {
             </section>
             <hr className="w-full text-black opacity-10 mt-[60px]"/>
         </div>
+        
         <section className="px-[18px] lg:px-[244px] mt-[60px]">
             <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]">
                 <div className="py-8">
@@ -28,7 +29,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex justify-center py-8">
-                    <img src="/assets/notely.png" alt="" className="hidden lg:block w-2/3"/>
+                    <img src="/assets/notely.png" alt="" className="hidden lg:block w-60"/>
                 </div>
             </section>
 
@@ -41,7 +42,20 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex justify-center py-8">
-                    <img src="/assets/movieinfo.png" alt="" className="hidden lg:block"/>
+                    <img src="/assets/movieinfo.png" alt="" className="hidden lg:block w-44"/>
+                </div>
+            </section>
+
+            <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
+                <div className="py-8">
+                    <div className="mb-[16px]"><img src="/assets/the-autoscript-logo.svg" alt="" className="w-24"/></div>
+                    <div>
+                    <p className="text-[#181818] text-[32px] font-bold mb-[16px]">The Autoscript</p>
+                    <p className="text-[16px] font-normal">With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers, Improved my ability to write better PR requests, and as a side effect, I now know more about the Arabic grammar.</p>
+                    </div>
+                </div>
+                <div className="flex justify-center py-8">
+                    <img src="/assets/the-autoscript.png" alt="" className="hidden lg:block w-72"/>
                 </div>
             </section>
 

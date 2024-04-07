@@ -36,7 +36,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className="flex justify-center py-8">
-                      <img src="/assets/notely.png" alt="" className="hidden lg:block w-2/3"/>
+                      <img src="/assets/notely.png" alt="" className="hidden lg:block w-60"/>
                     </div>
                   </section>
                   <section className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]">
@@ -48,7 +48,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className="flex justify-center py-8">
-                      <img src="/assets/movieinfo.png" alt="" className="hidden lg:block"/>
+                      <img src="/assets/movieinfo.png" alt="" className="hidden lg:block w-44"/>
                     </div>
                   </section>
             </section>
