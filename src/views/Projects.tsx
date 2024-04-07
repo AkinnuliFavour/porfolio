@@ -25,7 +25,7 @@ const Projects = () => {
                     <div className="mb-[16px]"><img src="/assets/logo.ico" alt="" className="w-24 rounded-lg"/></div>
                     <div className="">
                     <p className="text-[#181818] text-[32px] font-bold mb-[16px]">Notely</p>
-                    <p className="text-[16px] font-normal">Notely is a side project that I’ve built to help me keep track and manage my tasks/activities for a specific period of time. It helps you keep track of taks in differrent important categories like home tasks, business tasks, personal tasks, e.t.c</p>
+                    <p className="text-[16px] font-normal">Experience seamless task management with my React-built website, designed to streamline productivity across three key categories: Home, Personal, and Business. Organize your tasks effortlessly, prioritize effectively, and stay on top of your commitments with intuitive user interfaces and smooth interactions. Enhance your productivity and achieve your goals efficiently with this versatile task management tool.</p>
                     </div>
                 </div>
                 <div className="flex justify-center py-8">
@@ -38,7 +38,7 @@ const Projects = () => {
                     <div className="mb-[16px]"><img src="/assets/movieinfo-logo.png" alt="" /></div>
                     <div>
                     <p className="text-[#181818] text-[32px] font-bold mb-[16px]">MovieBox</p>
-                    <p className="text-[16px] font-normal">With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers, Improved my ability to write better PR requests, and as a side effect, I now know more about the Arabic grammar.</p>
+                    <p className="text-[16px] font-normal">Discover the magic of cinema with my React-based movie details website. Seamlessly navigate through an extensive collection of films, exploring synopses, cast details, ratings, and more. With an intuitive user interface and responsive design, users can effortlessly dive into their favorite movies from any device. Elevating the movie-watching experience, this website is a testament to my passion for both web development and love for movies.</p>
                     </div>
                 </div>
                 <div className="flex justify-center py-8">
@@ -51,7 +51,7 @@ const Projects = () => {
                     <div className="mb-[16px]"><img src="/assets/the-autoscript-logo.svg" alt="" className="w-24"/></div>
                     <div>
                     <p className="text-[#181818] text-[32px] font-bold mb-[16px]">The Autoscript</p>
-                    <p className="text-[16px] font-normal">With the release of the new React website on March 16, there was a need for localization to make the documentation accessible to Arabic-speaking developers. I contributed to translating several documentation, worked with great developers, Improved my ability to write better PR requests, and as a side effect, I now know more about the Arabic grammar.</p>
+                    <p className="text-[16px] font-normal">This project is a user-friendly web application built with React that leverages cutting-edge speech recognition technology to transcribe audio files into text with remarkable accuracy. With a sleek and intuitive interface, users can easily upload audio files and receive precise transcriptions in a matter of seconds. Whether it's professionals needing accurate documentation or individuals looking to easily convert audio content into text.</p>
                     </div>
                 </div>
                 <div className="flex justify-center py-8">

@@ -26,11 +26,11 @@ const About = () => {
           </section>
           <section className="w-full">
               <h3 className="text-[16px] font-semibold text-[#181818]">Who I am</h3>
-              <p className="text-[15px] mt-[9px]">I'm <span className="text-[#181818]">Favour</span>, a multi-disciplinary front-end engineer based in Akure, Nigeria.</p>
-              <h3 className="text-[16px] font-semibold text-[#181818] mt-[32px]">What I Do</h3>
-              <p className="text-[15px] mt-[9px]">With two years of invaluable experience in my role at Harmony Technology –– a tech company based here in Rabat, I have honed my skills in React.js, Next.js, TailwindCSS, and TypeScript, allowing me to craft seamless and interactive user experiences. During my time at Harmony Technology, I had the privilege of collaborating on projects for esteemed clients such as the Ministry of Health, Ministry of Education, and Ministry of Justice. It was an incredibly rewarding experience to develop applications that directly impact the lives of Moroccan citizens.</p>
-              <h3 className="text-[16px] font-semibold text-[#181818] mt-[32px]">What I Did</h3>
-              <p className="text-[15px] mt-[9px]">Before delving into the realm of front end engineering, I spent five years as a graphic designer. This background has equipped me with a keen eye for aesthetics and a deep understanding of user-centered design principles. It enables me to seamlessly blend functionality and visual appeal in every project I undertake.</p>
+              <p className="text-[15px] mt-[9px]">I'm <span className="text-[#181818]">Akinnuli Favour Oluwasemilore</span>, a multi-disciplinary front-end engineer based in Akure, Nigeria.</p>
+              <h3 className="text-[16px] font-semibold text-[#181818] mt-[32px]">A Brief Introduction</h3>
+              <p className="text-[15px] mt-[9px]">
+                I am a passionate Frontend Engineer with a strong foundation in HTML, CSS, and JavaScript, complemented by expertise in modern frameworks like React and frontend utility libraries like Tailwind CSS. Over the past two years, I've dedicated myself to honing my skills through a series of immersive personal projects, allowing me to develop a keen eye for intuitive user interfaces and seamless user experiences. My journey has led me to delve into the realm of full-stack development, where I've gained proficiency in Node.js, Express, and MongoDB, enabling me to create dynamic and scalable web applications. With a commitment to delivering clean, efficient code and a knack for problem-solving, I strive to leverage my skills to craft engaging digital experiences that make a meaningful impact.
+              </p>
               <p className="text-[18px] mt-[60px]">Feel free to reach out via e-mail, or follow me on Twitter. Want to see where I’ve worked? Check out my Resume, or Connect with me on LinkedIn.</p>
           </section>
         </section>
