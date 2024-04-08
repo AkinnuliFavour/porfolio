@@ -37,7 +37,11 @@ const Contact = () => {
               New Message
             </h3>
           </div>
-          <form action="" className="px-[16px] lg:px-[32px] py-[10px]">
+          <form
+            action="https://formsubmit.co/ee06fa15c50858f71c4dc687f1d4d4d5 "
+            method="POST"
+            className="px-[16px] lg:px-[32px] py-[10px]"
+          >
             <div className="h-[35px] mb-[16px] flex items-center">
               <label
                 htmlFor="email"
@@ -47,7 +51,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                name=""
+                name="email"
                 id="email"
                 placeholder="Enter your email address"
                 className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
@@ -63,7 +67,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name=""
+                name="name"
                 id="name"
                 placeholder="Enter your name"
                 className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
@@ -79,7 +83,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name=""
+                name="subject"
                 id="subject"
                 placeholder="Enter subject"
                 className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
@@ -89,8 +93,8 @@ const Contact = () => {
             <hr />
 
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               cols={30}
               rows={10}
               placeholder="Write your message here"
