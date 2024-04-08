@@ -1,21 +1,46 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="w-full h-[60px] px-4 mt-4 bg-white opacity-25 hidden lg:flex justify-between text-lg font-medium rounded-xl">
-        <ul className="flex items-center gap-[40px] ">
-            <Link to='/'><img src="/assets/favour-logo-black.svg" alt="" className="w-[39.87px] h-[26px] text-black"/></Link>
-            <li><Link to='/about' className="hover:text-blue-800">About</Link></li>
-            <li><Link to='/projects' className="hover:text-blue-800">Projects</Link></li>
-            <li><Link to='/contact' className="hover:text-blue-800">Contact</Link></li>
-        </ul>
-        <div className="flex items-center gap-[24px]">
-            <img src="/assets/LinkedIn.png" alt="" />
-            <img src="/assets/X.png" alt="" />
-            <img src="/assets/Github.svg" alt="" />
-        </div>
+      <ul className="flex items-center gap-[40px] ">
+        <Link to="/">
+          <img
+            src="/assets/favour-logo-black.svg"
+            alt=""
+            className="w-[39.87px] h-[26px] text-black"
+          />
+        </Link>
+        <li>
+          <Link to="/about" className="hover:text-blue-800">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/projects" className="hover:text-blue-800">
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="hover:text-blue-800">
+            Contact
+          </Link>
+        </li>
+      </ul>
+      <div className="flex items-center gap-[24px]">
+        <Link
+          to="https://www.linkedin.com/in/oluwasemilore-akinnuli-921a2124b"
+          target="_blank"
+        >
+          <img src="/assets/LinkedIn.png" alt="" />
+        </Link>
+        {/* <img src="/assets/X.png" alt="" /> */}
+        <Link to="https://github.com/AkinnuliFavour" target="_blank">
+          <img src="/assets/Github.svg" alt="" />
+        </Link>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

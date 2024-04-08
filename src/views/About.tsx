@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 
 const About = () => {
+  const navigate = useNavigate()
   return (
     <main className="text-[#808080]">
        <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full flex flex-col">
@@ -35,7 +36,12 @@ const About = () => {
           </section>
         </section>
         <div className="flex items-center w-full mt-[100px] px-[16px] lg:px-[244px]">
-          <button className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"> Get in touch</button>
+          <button 
+            className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"
+            onClick={() => navigate('/contact')}
+          > 
+            Get in touch
+          </button>
         </div>
         <Footer />
     </main>
