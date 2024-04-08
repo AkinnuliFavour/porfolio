@@ -26,7 +26,7 @@ const Home = () => {
           <section className="w-full px-[16px] lg:max-w-[65%] lg:px-0 flex flex-col">
             <h2 className="lg:hidden text-[48px] font-extrabold">Hi 👋</h2>
             <h2 className="text-[48px] lg:text-[70px] font-extrabold">
-              I'm <span className="text-[#181818]">Akin Favour</span>
+              I'm <span className="text-[#181818]">Akinnuli Favour</span>
             </h2>
             <p className="text-[15px] lg:text-[24px] mt-[30px]">
               A front-end engineer helping startups turn their visions into a
@@ -34,9 +34,13 @@ const Home = () => {
               web-based apps.
             </p>
             <div className="flex flex-col lg:flex-row lg:mt-[30px] mt-[56px]">
-              <button className="bg-gradient-to-r from-black to-black text-white px-[32px] py-[16px] rounded-[9px] lg:mr-[16px]">
+              <Link
+                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/EUJxb1B4kANNor6sus7YKhUBF5x-k8ktByHLAWl1nd2SWw?email=oluwasemiloreakinnuli%40gmail.com&e=h9QRJh"
+                target="_blank"
+                className="bg-gradient-to-r from-black to-black text-white px-[32px] py-[16px] rounded-[9px] lg:mr-[16px]"
+              >
                 See my resume
-              </button>
+              </Link>
               <button
                 className="bg-[#F3F3F3] text-[#181818] px-[32px] py-[16px] rounded-[9px] mt-[17px] lg:mt-0"
                 onClick={() => navigate("/contact")}
