@@ -135,8 +135,10 @@ const Home = () => {
             </p>
           </section>
           <div className="flex items-center w-full lg:w-[201px] mt-[34px] lg:mt-0">
-            <button className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white">
-              {" "}
+            <button
+              className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"
+              onClick={() => navigate("/contact")}
+            >
               Get in touch
             </button>
           </div>
