@@ -1,9 +1,16 @@
+import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Projects = () => {
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="text-[#808080]">
       <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full flex flex-col">
