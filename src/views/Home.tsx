@@ -35,9 +35,9 @@ const Home = () => {
             </p>
             <div className="flex flex-col lg:flex-row lg:mt-[30px] mt-[56px]">
               <Link
-                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/EUJxb1B4kANNor6sus7YKhUBF5x-k8ktByHLAWl1nd2SWw?email=oluwasemiloreakinnuli%40gmail.com&e=h9QRJh"
+                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/EUJxb1B4kANNor6sus7YKhUBJsBkAV1vu3557nfE5mRfcw?e=qxx6wt"
                 target="_blank"
-                className="bg-gradient-to-r from-black to-black text-white px-[32px] py-[16px] rounded-[9px] lg:mr-[16px]"
+                className="bg-gradient-to-r from-black to-black text-white text-center px-[32px] py-[16px] rounded-[9px] lg:mr-[16px]"
               >
                 See my resume
               </Link>
