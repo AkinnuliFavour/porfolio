@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -8,6 +11,8 @@ const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init();
+    AOS.refresh();
   }, []);
 
   return (
@@ -22,11 +27,23 @@ const Home = () => {
         >
           <img src="/assets/favour-logo-white.svg" alt="" />
         </Link>
-        <section className="lg:mt-[121px] flex justify-center">
+        <section
+          className="lg:mt-[121px] flex justify-center"
+          data-aos="zoom-in"
+        >
           <section className="w-full px-[16px] lg:max-w-[65%] lg:px-0 flex flex-col">
             <h2 className="lg:hidden text-[48px] font-extrabold">Hi 👋</h2>
             <h2 className="text-[48px] lg:text-[70px] font-extrabold">
-              I'm <span className="text-[#181818]">Akinnuli Favour</span>
+              I'm{" "}
+              <span className="text-[#181818]">
+                <Typewriter
+                  words={["Favour", "Oluwasemilore", "Akinnuli"]}
+                  typeSpeed={100}
+                  deleteSpeed={100}
+                  delaySpeed={1000}
+                  loop
+                />
+              </span>
             </h2>
             <p className="text-[15px] lg:text-[24px] mt-[30px]">
               A front-end engineer helping startups turn their visions into a
@@ -60,6 +77,7 @@ const Home = () => {
             to="https://notely-react-frontend.vercel.app"
             target="_blank"
             className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]"
+            data-aos="zoom-in"
           >
             <div className="py-8">
               <div className="mb-[16px]">
@@ -96,6 +114,7 @@ const Home = () => {
             to="https://movieinfo-2.vercel.app"
             target="_blank"
             className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
+            data-aos="zoom-in"
           >
             <div className="py-8">
               <div className="mb-[16px]">
@@ -127,7 +146,10 @@ const Home = () => {
           </Link>
         </section>
       </section>
-      <section className="flex flex-col justify-center items-center">
+      <section
+        className="flex flex-col justify-center items-center"
+        data-aos="zoom-in"
+      >
         <section className="w-full lg:w-[68%] px-[16px] lg:px-6 flex flex-col lg:flex-row justify-between mt-[60px] lg:mt-[114px]">
           <section>
             <h3 className="text-[32px] lg:text-[48px] text-center lg:text-left font-bold text-[#181818]">
