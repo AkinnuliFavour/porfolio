@@ -1,14 +1,17 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Projects = () => {
-
   const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init();
+    AOS.refresh();
   }, []);
 
   return (
@@ -39,6 +42,7 @@ const Projects = () => {
           to="https://notely-react-frontend.vercel.app"
           target="_blank"
           className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]"
+          data-aos="zoom-in"
         >
           <div className="py-8">
             <div className="mb-[16px]">
@@ -72,6 +76,7 @@ const Projects = () => {
           to="https://movieinfo-2.vercel.app"
           target="_blank"
           className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
+          data-aos="zoom-in"
         >
           <div className="py-8">
             <div className="mb-[16px]">
@@ -106,6 +111,7 @@ const Projects = () => {
           to="https://the-autoscript-frontend.vercel.app"
           target="_blank"
           className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
+          data-aos="zoom-in"
         >
           <div className="py-8">
             <div className="mb-[16px]">
@@ -139,7 +145,10 @@ const Projects = () => {
           </div>
         </Link>
 
-        <section className=" bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center lg:grid-cols-2 mb-[32px] rounded-[32px] ">
+        <section
+          className=" bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center lg:grid-cols-2 mb-[32px] rounded-[32px]"
+          data-aos="zoom-in"
+        >
           <img src="/assets/Stars.png" alt="" />
           <h3 className="text-[#181818] text-[20px] text-center lg:text-[32px] font-bold mt-[11px]">
             YOUR PROJECT GOES HERE
