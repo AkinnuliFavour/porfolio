@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import FrontCard from "./FrontCard";
 import BackCard from "./BackCard";
 
-interface FrontCardProps {
+interface CardProps {
   name: string;
   description: string;
   url: string;
@@ -20,7 +20,7 @@ const Card = ({
   logo,
   screenshot,
   tags,
-}: FrontCardProps) => {
+}: CardProps) => {
   return (
     <Link
       to={url}
@@ -34,7 +34,6 @@ const Card = ({
             <FrontCard
               name={name}
               description={description}
-              url={url}
               imageUrl={imageUrl}
               logo={logo}
             />

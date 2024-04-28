@@ -1,18 +1,11 @@
 interface FrontCardProps {
   name: string;
   description: string;
-  url: string;
   imageUrl: string;
   logo: string;
 }
 
-const FrontCard = ({
-  name,
-  description,
-  url,
-  imageUrl,
-  logo,
-}: FrontCardProps) => {
+const FrontCard = ({ name, description, imageUrl, logo }: FrontCardProps) => {
   return (
     <div className="w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px] bg-[#F6F6F6] px-10">
       <div className="py-8">
