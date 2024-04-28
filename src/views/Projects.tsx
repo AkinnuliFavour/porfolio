@@ -65,7 +65,7 @@ const Projects = () => {
           </p>
           <div className="flex items-center w-full lg:w-[201px] mt-[34px] lg:mt-[90px]">
             <button
-              className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"
+              className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-40"
               onClick={() => navigate("/contact")}
             >
               Get in touch

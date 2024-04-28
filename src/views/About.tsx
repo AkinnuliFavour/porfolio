@@ -77,10 +77,10 @@ const About = () => {
       </section>
       <div className="flex items-center w-full mt-[100px] px-[16px] lg:px-[244px]">
         <button
-          className="bg-gradient-to-r from-black to-black w-full py-[16px] px-[32px] rounded-[9px] text-white"
+          className="w-full px-8 py-4 hover:before:bg-black relative overflow-hidden border border-black bg-white text-black shadow-2xl rounded-lg transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full"
           onClick={() => navigate("/contact")}
         >
-          Get in touch
+          <span className="relative z-10">Get in touch</span>
         </button>
       </div>
       <Footer />

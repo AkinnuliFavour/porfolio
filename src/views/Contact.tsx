@@ -102,8 +102,8 @@ const Contact = () => {
             ></textarea>
 
             <div className="flex justify-center lg:justify-end py-[16px]">
-              <button className="w-full py-[16px] lg:px-12 bg-gradient-to-l from-black to-black text-white rounded-[9px]">
-                Send
+              <button className="w-full lg:px-12 hover:before:bg-black relative h-[50px] overflow-hidden border border-black bg-white px-3 text-black shadow-2xl rounded-lg transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:shadow-black hover:before:left-0 hover:before:w-full">
+                <span className="relative z-10">Send</span>
               </button>
             </div>
           </form>
