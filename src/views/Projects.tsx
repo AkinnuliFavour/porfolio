@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { projects } from "../utils/utils";
+import Card from "../components/Card";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -37,114 +39,19 @@ const Projects = () => {
         <hr className="w-full text-black opacity-10 mt-[60px]" />
       </div>
 
-      <section className="px-[18px] lg:px-[244px] mt-[60px]">
-        <Link
-          to="https://notely-react-frontend.vercel.app"
-          target="_blank"
-          className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]"
-          data-aos="zoom-in"
-        >
-          <div className="py-8">
-            <div className="mb-[16px]">
-              <img src="/assets/logo.ico" alt="" className="w-24 rounded-lg" />
-            </div>
-            <div className="">
-              <p className="text-[#181818] text-[32px] font-bold mb-[16px]">
-                Notely
-              </p>
-              <p className="text-[16px] font-normal">
-                Experience seamless task management with my React-built website,
-                designed to streamline productivity across three key categories:
-                Home, Personal, and Business. Organize your tasks effortlessly,
-                prioritize effectively, and stay on top of your commitments with
-                intuitive user interfaces and smooth interactions. Enhance your
-                productivity and achieve your goals efficiently with this
-                versatile task management tool.
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center py-8">
-            <img
-              src="/assets/notely.png"
-              alt=""
-              className="hidden lg:block w-60"
-            />
-          </div>
-        </Link>
-
-        <Link
-          to="https://movieinfo-2.vercel.app"
-          target="_blank"
-          className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
-          data-aos="zoom-in"
-        >
-          <div className="py-8">
-            <div className="mb-[16px]">
-              <img src="/assets/movieinfo-logo.png" alt="" />
-            </div>
-            <div>
-              <p className="text-[#181818] text-[32px] font-bold mb-[16px]">
-                MovieBox
-              </p>
-              <p className="text-[16px] font-normal">
-                Discover the magic of cinema with my React-based movie details
-                website. Seamlessly navigate through an extensive collection of
-                films, exploring synopses, cast details, ratings, and more. With
-                an intuitive user interface and responsive design, users can
-                effortlessly dive into their favorite movies from any device.
-                Elevating the movie-watching experience, this website is a
-                testament to my passion for both web development and love for
-                movies.
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center py-8">
-            <img
-              src="/assets/movieinfo.png"
-              alt=""
-              className="hidden lg:block w-44"
-            />
-          </div>
-        </Link>
-
-        <Link
-          to="https://the-autoscript-frontend.vercel.app"
-          target="_blank"
-          className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
-          data-aos="zoom-in"
-        >
-          <div className="py-8">
-            <div className="mb-[16px]">
-              <img
-                src="/assets/the-autoscript-logo.svg"
-                alt=""
-                className="w-24"
-              />
-            </div>
-            <div>
-              <p className="text-[#181818] text-[32px] font-bold mb-[16px]">
-                The Autoscript
-              </p>
-              <p className="text-[16px] font-normal">
-                This project is a user-friendly web application built with React
-                that leverages cutting-edge speech recognition technology to
-                transcribe audio files into text with remarkable accuracy. With
-                a sleek and intuitive interface, users can easily upload audio
-                files and receive precise transcriptions in a matter of seconds.
-                Whether it's professionals needing accurate documentation or
-                individuals looking to easily convert audio content into text.
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center py-8">
-            <img
-              src="/assets/the-autoscript.png"
-              alt=""
-              className="hidden lg:block w-72"
-            />
-          </div>
-        </Link>
-
+      <section className="px-[18px] lg:px-[100px] xl:px-[244px] mt-[60px]">
+        {projects.map((project) => (
+          <Card
+            key={project.id}
+            name={project.name}
+            description={project.description}
+            url={project.link}
+            imageUrl={project.image}
+            logo={project.logo}
+            screenshot={project.screenshot}
+            tags={project.tags}
+          />
+        ))}
         <section
           className=" bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center lg:grid-cols-2 mb-[32px] rounded-[32px]"
           data-aos="zoom-in"
