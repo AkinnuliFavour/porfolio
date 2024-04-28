@@ -138,7 +138,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center py-8">
               <img
-                src="/assets/movieinfo.png"
+                src="/assets/movieinfo-mobile.png"
                 alt=""
                 className="hidden lg:block w-44"
               />
