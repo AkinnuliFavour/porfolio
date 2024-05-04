@@ -12,30 +12,35 @@ const Navbar = () => {
           />
         </Link>
         <li>
-          <Link to="/about" className="hover:text-blue-800">
+          <Link to="/about" className="hover:text-blue-800 drop-shadow-2xl">
             About
           </Link>
         </li>
         <li>
-          <Link to="/projects" className="hover:text-blue-800">
+          <Link to="/projects" className="hover:text-blue-800 drop-shadow-2xl">
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-blue-800">
+          <Link to="/contact" className="hover:text-blue-800 drop-shadow-2xl">
             Contact
           </Link>
         </li>
       </ul>
-      <div className="flex items-center gap-[24px]">
+      <div className="flex items-center gap-[24px] drop-shadow-2xl">
         <Link
           to="https://www.linkedin.com/in/oluwasemilore-akinnuli-921a2124b"
           target="_blank"
+          className="drop-shadow-2xl"
         >
           <img src="/assets/LinkedIn.png" alt="" />
         </Link>
         {/* <img src="/assets/X.png" alt="" /> */}
-        <Link to="https://github.com/AkinnuliFavour" target="_blank">
+        <Link
+          to="https://github.com/AkinnuliFavour"
+          target="_blank"
+          className="drop-shadow-2xl"
+        >
           <img src="/assets/Github.svg" alt="" />
         </Link>
       </div>
