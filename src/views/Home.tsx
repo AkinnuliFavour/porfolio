@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    AOS.init();
+    AOS.init({ once: true });
     AOS.refresh();
   }, []);
 
