@@ -8,21 +8,30 @@ const Navbar = () => {
           <img
             src="/assets/favour-logo-black.svg"
             alt=""
-            className="w-[39.87px] h-[26px] text-black"
+            className="w-[39.87px] h-[26px] text-black hover:scale-110"
           />
         </Link>
         <li>
-          <Link to="/about" className="hover:text-blue-800 drop-shadow-2xl">
+          <Link
+            to="/about"
+            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="/projects" className="hover:text-blue-800 drop-shadow-2xl">
+          <Link
+            to="/projects"
+            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-blue-800 drop-shadow-2xl">
+          <Link
+            to="/contact"
+            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+          >
             Contact
           </Link>
         </li>
@@ -33,7 +42,7 @@ const Navbar = () => {
           target="_blank"
           className="drop-shadow-2xl"
         >
-          <img src="/assets/LinkedIn.png" alt="" />
+          <img src="/assets/LinkedIn.png" className="hover:scale-110" alt="" />
         </Link>
         {/* <img src="/assets/X.png" alt="" /> */}
         <Link
@@ -41,7 +50,7 @@ const Navbar = () => {
           target="_blank"
           className="drop-shadow-2xl"
         >
-          <img src="/assets/Github.svg" alt="" />
+          <img src="/assets/Github.svg" className="hover:scale-110" alt="" />
         </Link>
       </div>
     </nav>

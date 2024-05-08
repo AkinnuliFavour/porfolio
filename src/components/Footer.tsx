@@ -24,13 +24,28 @@ const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-[16px] text-[16px] font-normal text-[#181818]">
               <li>
-                <Link to="/about">About</Link>
+                <Link
+                  to="/about"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/projects">Projects</Link>
+                <Link
+                  to="/projects"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link
+                  to="/contact"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -40,15 +55,28 @@ const Footer = () => {
             </h4>
             <ul className="flex flex-col gap-[16px] text-[16px] font-normal text-[#181818]">
               <li>
-                <Link to="mailto: oluwasemiloreakinnuli@gmail.com">Email</Link>
+                <Link
+                  to="mailto: oluwasemiloreakinnuli@gmail.com"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
+                  Email
+                </Link>
               </li>
               <li>
-                <Link to="https://www.linkedin.com/in/oluwasemilore-akinnuli-921a2124b">
+                <Link
+                  to="https://www.linkedin.com/in/oluwasemilore-akinnuli-921a2124b"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
                   LinkedIn
                 </Link>
               </li>
               <li>
-                <Link to="https://github.com/AkinnuliFavour">Github</Link>
+                <Link
+                  to="https://github.com/AkinnuliFavour"
+                  className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+                >
+                  Github
+                </Link>
               </li>
             </ul>
           </div>
