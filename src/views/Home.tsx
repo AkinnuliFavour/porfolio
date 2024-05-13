@@ -54,9 +54,12 @@ const Home = () => {
               <Link
                 to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/EUJxb1B4kANNor6sus7YKhUBJsBkAV1vu3557nfE5mRfcw?e=qxx6wt"
                 target="_blank"
-                className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px]"
+                className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px] text-center"
               >
-                <span className="relative z-10"> See my resume</span>
+                <span className="relative z-10 text-center">
+                  {" "}
+                  See my resume
+                </span>
               </Link>
               <button
                 className="bg-[#F3F3F3] text-[#181818] before:ease relative px-8 py-3 overflow-hidden border border-[#F3F3F3] shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-black before:opacity-5 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px] mt-[17px] lg:mt-0"

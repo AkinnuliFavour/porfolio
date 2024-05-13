@@ -14,7 +14,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/about"
-            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             About
           </Link>
@@ -22,7 +22,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/projects"
-            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             Projects
           </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/contact"
-            className="hover:bg-gradient-to-r from-[#333399] to-[#FF00CC] hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
+            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             Contact
           </Link>
