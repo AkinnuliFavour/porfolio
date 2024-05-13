@@ -163,7 +163,7 @@ const Home = () => {
               ready when you are.
             </p>
           </section>
-          <div className="flex items-center w-full lg:w-[201px] mt-[34px] lg:mt-0">
+          <div className="flex items-center justify-center w-full lg:w-[201px] mt-[34px] lg:mt-0">
             <button
               className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-1000 hover:shadow-black hover:before:-translate-x-44"
               onClick={() => navigate("/contact")}

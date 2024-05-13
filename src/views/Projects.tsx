@@ -63,7 +63,7 @@ const Projects = () => {
           <p className="text-[16px] font-normal mt-[16px] text-center">
             Let’s turn your idea into a visual reality
           </p>
-          <div className="flex items-center w-full lg:w-[201px] mt-[34px] lg:mt-[90px]">
+          <div className="flex items-center justify-center w-full lg:w-[201px] mt-[34px] lg:mt-[90px]">
             <button
               className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-40"
               onClick={() => navigate("/contact")}
