@@ -4,7 +4,7 @@ import BackCard from "./BackCard";
 interface FrontCardProps {
   name: string;
   description: string;
-  imageUrl: string;
+
   logo: string;
   screenshot: string;
   tags: string[];
@@ -18,13 +18,13 @@ interface FrontCardProps {
 //   )
 // }
 
-const FrontCard = ({ name, description, imageUrl, logo, screenshot, tags }: FrontCardProps) => {
+const FrontCard = ({ name, description, logo, screenshot, tags }: FrontCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const normalStyle = "bg-[#F9F9F9] shadow-lg";
   return (
     <div
-      className={`w-full h-full lg:h-96 mb-[32px] rounded-[32px] px-10 bg-center bg-top transition-all duration-300 ease-in-out ${!isHovered && normalStyle}`}
+      className={`w-full h-full lg:h-96 mb-[32px] rounded-[32px] px-10 bg-cover  bg-top transition-all duration-300 ease-in-out ${!isHovered && normalStyle}`}
       style={{ backgroundImage: isHovered ? `url(${screenshot})` : '' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

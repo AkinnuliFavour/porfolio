@@ -6,7 +6,7 @@ interface BackCardProps {
   isHovered: boolean;
 }
 
-const BackCard = ({ screenshot, tags, isHovered }: BackCardProps) => {
+const BackCard = ({ tags, isHovered }: BackCardProps) => {
   return (
 
     <div className={`absolute bg-black rounded-full px-20 h-96 w-full bg-opacity-80 text-[#999] font-bold flex justify-center items-center transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}`}>

@@ -17,7 +17,6 @@ const Card = ({
   name,
   description,
   url,
-  imageUrl,
   logo,
   screenshot,
   tags,
@@ -35,7 +34,6 @@ const Card = ({
             <FrontCard
               name={name}
               description={description}
-              imageUrl={imageUrl}
               logo={logo}
               screenshot={screenshot}
               tags={tags}
