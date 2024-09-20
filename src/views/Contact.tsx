@@ -54,7 +54,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 placeholder="Enter your email address"
-                className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
+                className="w-full px-2 ml-[8px] bg-[#F6F6F6] outline-none text-[14px] rounded-sm outline-1 focus:outline-black"
               />
             </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
                 name="name"
                 id="name"
                 placeholder="Enter your name"
-                className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
+                className="w-full px-2 ml-[8px] bg-[#F6F6F6] outline-none text-[14px] rounded-sm outline-1 focus:outline-black"
               />
             </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                 name="subject"
                 id="subject"
                 placeholder="Enter subject"
-                className="w-full ml-[8px] bg-[#F6F6F6] outline-none text-[14px]"
+                className="w-full px-2 ml-[8px] bg-[#F6F6F6] outline-none text-[14px] rounded-sm outline-1 focus:outline-black"
               />
             </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
               cols={30}
               rows={10}
               placeholder="Write your message here"
-              className="w-full p-[24px] bg-[#F3F3F3] mt-[32px] rounded-[12px] resize-none outline-none text-[14px]"
+              className="w-full p-[24px] bg-[#F3F3F3] mt-[32px] rounded-[12px] resize-none outline-none text-[14px] outline-1 focus:outline-black"
             ></textarea>
 
             <div className="flex justify-center lg:justify-end py-[16px]">
