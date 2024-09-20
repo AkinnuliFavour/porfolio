@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import FrontCard from "./FrontCard";
 // import { NewFrontCard } from "./FrontCard";
-import BackCard from "./BackCard";
 
 interface CardProps {
   name: string;
