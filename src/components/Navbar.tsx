@@ -1,39 +1,37 @@
 import { Link } from "react-router-dom";
+import ActiveLink from "./ActiveLink";
 
 const Navbar = () => {
   return (
     <nav className="w-full h-[60px] px-4 mt-4 bg-white bg-opacity-25 hidden lg:flex justify-between text-lg font-medium rounded-xl">
       <ul className="flex items-center gap-[40px] ">
-        <Link to="/">
+        <ActiveLink to="/">
           <img
             src="/assets/favour-logo-black.svg"
             alt=""
             className="w-[39.87px] h-[26px] text-black hover:scale-110"
           />
-        </Link>
+        </ActiveLink>
         <li>
-          <Link
+          <ActiveLink
             to="/about"
-            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             About
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link
+          <ActiveLink
             to="/projects"
-            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             Projects
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link
+          <ActiveLink
             to="/contact"
-            className="hover:bg-gradient-to-r from-cyan-500 to-orange-400 hover:text-transparent hover:bg-clip-text drop-shadow-2xl"
           >
             Contact
-          </Link>
+          </ActiveLink>
         </li>
       </ul>
       <div className="flex items-center gap-[24px] drop-shadow-2xl">
