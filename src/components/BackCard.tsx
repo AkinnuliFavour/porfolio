@@ -1,21 +1,27 @@
 import { BackCardTag } from "./BackCardTag";
 
 interface BackCardProps {
-  screenshot: string;
   tags: string[];
-  isHovered: boolean;
+  isFlipped: boolean;
 }
 
-const BackCard = ({ tags, isHovered }: BackCardProps) => {
+const BackCard = ({ tags, isFlipped }: BackCardProps) => {
   return (
-
-    <div className={`absolute bg-black rounded-[32px] px-20 h-96 w-full bg-opacity-80 text-[#999] font-bold flex justify-center items-center shadow-md shadow-gray-500 transition-all duration-300 ease-in-out ${isHovered ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}`}>
-      <div
-        className="w-4/5 h- flex justify-center items-center gap-10 flex-wrap opacity-100"
-        style={{ opacity: 1 }}
-      >
-        {tags.map((tag) => (
-          <BackCardTag tag={tag} />
+    <div
+      className={`absolute inset-0 bg-black/10 backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-500 ease-in-out ${
+        isFlipped
+          ? "opacity-100 scale-100"
+          : "opacity-0 scale-95 pointer-events-none"
+      }`}
+    >
+      <div className="text-center mb-6 lg:mb-8">
+        <h4 className="text-white text-sm lg:text-base font-semibold tracking-wide uppercase opacity-70">
+          Technology Stack
+        </h4>
+      </div>
+      <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-4 px-6 lg:px-8 max-w-full">
+        {tags.map((tag, index) => (
+          <BackCardTag key={`${tag}-${index}`} tag={tag} />
         ))}
       </div>
     </div>

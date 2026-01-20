@@ -5,6 +5,46 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Card from "../components/Card";
+
+const projects = [
+  {
+    name: "CryptoFlow",
+    description:
+      "A crypto-focused web app that aggregates live news from multiple sources and provides built-in portfolio tracking, helping users stay informed and manage their assets in one place. Built with React, TypeScript, TailwindCSS, and a Node.js/Express backend, the project deepened my understanding of TanStack Query v5 and refreshed my backend skills through hands-on debugging, optimization, and real-world data handling.",
+    url: "https://crypto-flow-nine.vercel.app",
+    logo: "/assets/cryptoflow-logo.ico",
+    screenshot: "/assets/cryptoflow-bg.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Local Storage",
+      "Responsive Design",
+      "Node.js",
+      "Express.js",
+      "News API",
+      "CoinGecko API",
+      "TanStack Query v5",
+    ],
+  },
+  {
+    name: "MovieBox",
+    description:
+      "Discover the magic of cinema with my React-based movie details website. Seamlessly navigate through an extensive collection of films, exploring synopses, cast details, ratings, and more. With an intuitive user interface and responsive design, users can effortlessly dive into their favorite movies from any device.",
+    url: "https://movieinfo-2.vercel.app",
+    logo: "/assets/movieinfo-logo.png",
+    screenshot: "/assets/movieinfo-bg.png",
+    tags: [
+      "React",
+      "TMDB API",
+      "Axios",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Supabase",
+    ],
+  },
+];
 
 const Home = () => {
   const navigate = useNavigate();
@@ -52,7 +92,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col lg:flex-row lg:mt-[30px] mt-[56px]">
               <Link
-                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/EUJxb1B4kANNor6sus7YKhUBJsBkAV1vu3557nfE5mRfcw?e=qxx6wt"
+                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/IQDM5unmc8hhS5wDpQ0sEu0tAdSCX3G9OxRI8CNwv_sJw20"
                 target="_blank"
                 className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px] text-center"
               >
@@ -76,77 +116,17 @@ const Home = () => {
           <p className="mb-[16px] lg:mb-[32px] font-bold text-[32px] lg:text-[48px] text-[#181818]">
             Selected Work
           </p>
-          <Link
-            to="https://notely-react-frontend.vercel.app"
-            target="_blank"
-            className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 justify-between mb-[32px] rounded-[32px]"
-            data-aos="zoom-in"
-          >
-            <div className="py-8">
-              <div className="mb-[16px]">
-                <img
-                  src="/assets/logo.ico"
-                  alt=""
-                  className="w-24 rounded-lg"
-                />
-              </div>
-              <div className="">
-                <p className="text-[#181818] text-[32px] font-bold mb-[16px]">
-                  Notely
-                </p>
-                <p className="text-[16px] font-normal">
-                  Experience seamless task management with my React-built
-                  website, designed to streamline productivity across three key
-                  categories: Home, Personal, and Business. Organize your tasks
-                  effortlessly, prioritize effectively, and stay on top of your
-                  commitments with intuitive user interfaces and smooth
-                  interactions. Enhance your productivity and achieve your goals
-                  efficiently with this versatile task management tool.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center py-8">
-              <img
-                src="/assets/notely.png"
-                alt=""
-                className="hidden lg:block w-60"
-              />
-            </div>
-          </Link>
-          <Link
-            to="https://movieinfo-2.vercel.app"
-            target="_blank"
-            className=" bg-[#F6F6F6] px-6 w-full grid grid-cols-1 lg:grid-cols-2 mb-[32px] rounded-[32px]"
-            data-aos="zoom-in"
-          >
-            <div className="py-8">
-              <div className="mb-[16px]">
-                <img src="/assets/movieinfo-logo.png" alt="" />
-              </div>
-              <div>
-                <p className="text-[#181818] text-[32px] font-bold mb-[16px]">
-                  MovieBox
-                </p>
-                <p className="text-[16px] font-normal">
-                  Discover the magic of cinema with my React-based movie details
-                  website. Seamlessly navigate through an extensive collection
-                  of films, exploring synopses, cast details, ratings, and more.
-                  With an intuitive user interface and responsive design, users
-                  can effortlessly dive into their favorite movies from any
-                  device. Elevating the movie-watching experience, this website
-                  is a testament to my passion for both web development and love
-                  for movies.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center py-8">
-              <img
-                src="/assets/movieinfo-mobile.png"
-                alt=""
-                className="hidden lg:block w-44"
-              />
-            </div>
-          </Link>
+          {projects.map((project) => (
+            <Card
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              url={project.url}
+              logo={project.logo}
+              screenshot={project.screenshot}
+              tags={project.tags}
+            />
+          ))}
         </section>
       </section>
       <section

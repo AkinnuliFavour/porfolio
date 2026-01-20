@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import FrontCard from "./FrontCard";
-// import { NewFrontCard } from "./FrontCard";
 
 interface CardProps {
   name: string;
   description: string;
   url: string;
-  imageUrl: string;
   logo: string;
   screenshot: string;
   tags: string[];
@@ -24,24 +22,18 @@ const Card = ({
     <Link
       to={url}
       target="_blank"
-      className="w-full min-h-full bg-[#F6F6F6] rounded-3xl"
+      className="w-full group outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-text-primary rounded-3xl transition-all duration-300"
       data-aos="zoom-in"
     >
-      <div className="cursor-pointer group rounded-[32px] max-w-[1000px] h-[480px] mb-20">
-        <div className="relative h-full w-full ">
-          <div className="w-full h-full absolute rounded-3xl overflow-hidden">
-            <FrontCard
-              name={name}
-              description={description}
-              logo={logo}
-              screenshot={screenshot}
-              tags={tags}
-            />
-            {/* <NewFrontCard name={name} description={description} imageUrl={imageUrl} logo={logo} /> */}
-          </div>
-          {/* <div className="absolute rotate-y-180 w-full h-full bg-opacity-95 rounded-3xl overflow-hidden text-neutral-300 space-y-5 backface-hidden">
-            <BackCard screenshot={screenshot} tags={tags} />
-          </div> */}
+      <div className="cursor-pointer rounded-3xl w-full h-80 lg:h-96 mb-8 lg:mb-10 overflow-hidden transition-all duration-300 hover:shadow-card-hover shadow-card-default">
+        <div className="relative h-full w-full">
+          <FrontCard
+            name={name}
+            description={description}
+            logo={logo}
+            screenshot={screenshot}
+            tags={tags}
+          />
         </div>
       </div>
     </Link>

@@ -46,7 +46,6 @@ const Projects = () => {
             name={project.name}
             description={project.description}
             url={project.link}
-            imageUrl={project.image}
             logo={project.logo}
             screenshot={project.screenshot}
             tags={project.tags}
