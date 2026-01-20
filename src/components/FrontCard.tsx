@@ -17,7 +17,7 @@ const FrontCard = ({
   tags,
 }: FrontCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile] = useState(window.innerWidth < 1024);
 
   const handleMouseEnter = () => {
     if (!isMobile) setIsFlipped(true);
