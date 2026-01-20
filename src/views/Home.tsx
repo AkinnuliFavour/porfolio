@@ -91,16 +91,14 @@ const Home = () => {
               web-based apps.
             </p>
             <div className="flex flex-col lg:flex-row lg:mt-[30px] mt-[56px]">
-              <Link
-                to="https://testfutaedu-my.sharepoint.com/:w:/g/personal/akinnulifocsc2022_futa_edu_ng/IQDM5unmc8hhS5wDpQ0sEu0tAdSCX3G9OxRI8CNwv_sJw20"
-                target="_blank"
+              <button
+                onClick={() =>
+                  window.open("/assets/AkinnuliFavour - Resume.pdf", "_blank")
+                }
                 className="before:ease relative px-8 py-3 overflow-hidden border border-black bg-black text-white shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px] text-center"
               >
-                <span className="relative z-10 text-center">
-                  {" "}
-                  See my resume
-                </span>
-              </Link>
+                <span className="relative z-10 text-center">See my resume</span>
+              </button>
               <button
                 className="bg-[#F3F3F3] text-[#181818] before:ease relative px-8 py-3 overflow-hidden border border-[#F3F3F3] shadow-2xl rounded-lg transition-all before:absolute before:right-0 before:top-0 before:h-14 before:w-6 before:translate-x-12 before:rotate-6 before:bg-black before:opacity-5 before:duration-700 hover:shadow-black hover:before:-translate-x-44 lg:mr-[16px] mt-[17px] lg:mt-0"
                 onClick={() => navigate("/contact")}

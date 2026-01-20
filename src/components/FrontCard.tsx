@@ -73,7 +73,7 @@ const FrontCard = ({
         </div>
         {/* Mobile indicator */}
         <div className="lg:hidden mt-4 text-xs text-text-secondary opacity-60">
-          Tap to view tech stack
+          Tap card to view stack
         </div>
       </div>
 
