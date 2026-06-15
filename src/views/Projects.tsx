@@ -32,7 +32,7 @@ const Projects = () => {
             Projects and ideas I've worked on
           </p>
         </section>
-        <hr className="w-full text-black opacity-10 mt-[60px]" />
+        <hr className="w-full text-black opacity-10 mt-[20px]" />
       </div>
 
       {/* ── Project Grid ── */}

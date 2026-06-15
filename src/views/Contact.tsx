@@ -31,7 +31,7 @@ const Contact = () => {
         <hr className="w-full text-black opacity-10 mt-[60px]" />
       </div>
       <section className="px-[16px] lg:px-[244px]">
-        <section className="mt-[60px] bg-[#F6F6F6] shadow-xl rounded-[12px]">
+        <section className="mt-[20px] bg-[#F6F6F6] shadow-xl rounded-[12px]">
           <div className="flex justify-center py-[18px] border-b border-b-[rgba(255, 255, 255, 0.25)]">
             <h3 className="text-[16px] font-medium text-[#181818]">
               New Message
