@@ -1,24 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import plugin from "tailwindcss/plugin";
-
-const CustomStyle = plugin(function ({ addUtilities }) {
-  addUtilities({
-    ".rotate-y-180": {
-      transform: "rotateY(180deg)",
-    },
-    ".preserve-3d": {
-      transformStyle: "preserve-3d",
-    },
-    ".perspective-1000": {
-      perspective: "1000px",
-    },
-    ".backface-hidden": {
-      backfaceVisibility: "hidden",
-    },
-  });
-});
-
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -33,9 +14,9 @@ export default {
       },
       boxShadow: {
         "card-default":
-          "0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06)",
+          "0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04)",
         "card-hover":
-          "0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04)",
+          "0 8px 24px rgba(0, 0, 0, 0.10), 0 2px 8px rgba(0, 0, 0, 0.06)",
         tag: "0 2px 4px rgba(0, 0, 0, 0.3)",
       },
       animation: {
@@ -49,5 +30,5 @@ export default {
       },
     },
   },
-  plugins: [CustomStyle],
+  plugins: [],
 };
