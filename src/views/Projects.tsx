@@ -1,19 +1,15 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { projects } from "../utils/utils";
-import Card from "../components/Card";
+import ProjectCard from "../components/project-card/ProjectCard";
 
 const Projects = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    AOS.init({ once: true });
-    AOS.refresh();
   }, []);
 
   return (
@@ -26,41 +22,51 @@ const Projects = () => {
           to="/"
           className="flex justify-center mb-[86px] mt-[32px] lg:hidden"
         >
-          <img src="/assets/favour-logo-white.svg" alt="" />
+          <img src="/assets/favour-logo-white.svg" alt="Home" />
         </Link>
         <section className="px-[16px] lg:px-[244px] lg:mt-[121px]">
           <h2 className="text-[48px] lg:text-[70px] font-extrabold text-[#181818]">
             Projects
           </h2>
           <p className="text-[15px] lg:text-[24px] font-normal">
-            Projects and ideas I’ve worked on
+            Projects and ideas I've worked on
           </p>
         </section>
         <hr className="w-full text-black opacity-10 mt-[60px]" />
       </div>
 
-      <section className="px-[18px] lg:px-[100px] xl:px-[244px] mt-[60px]">
-        {projects.map((project) => (
-          <Card
-            key={project.id}
-            name={project.name}
-            description={project.description}
-            url={project.link}
-            logo={project.logo}
-            screenshot={project.screenshot}
-            tags={project.tags}
-          />
-        ))}
+      {/* ── Project Grid ── */}
+      <section
+        className="px-[18px] lg:px-[100px] xl:px-[244px] mt-[60px]"
+        aria-label="Project showcase"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              url={project.link}
+              logo={project.logo}
+              screenshots={project.screenshots}
+              tags={project.tags}
+              github={project.github}
+              animationDelay={index * 80}
+            />
+          ))}
+        </div>
+
+        {/* ── CTA Card ── */}
         <section
-          className=" bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center lg:grid-cols-2 mb-[32px] rounded-[32px]"
-          data-aos="zoom-in"
+          className="bg-[#F6F6F6] px-6 w-full h-[565px] flex flex-col justify-center items-center mb-[32px] rounded-[32px] mt-8"
+          aria-label="Work with me"
         >
-          <img src="/assets/Stars.png" alt="" />
+          <img src="/assets/Stars.png" alt="" aria-hidden="true" />
           <h3 className="text-[#181818] text-[20px] text-center lg:text-[32px] font-bold mt-[11px]">
             YOUR PROJECT GOES HERE
           </h3>
           <p className="text-[16px] font-normal mt-[16px] text-center">
-            Let’s turn your idea into a visual reality
+            Let's turn your idea into a visual reality
           </p>
           <div className="flex items-center justify-center w-full lg:w-[201px] mt-[34px] lg:mt-[90px]">
             <button
@@ -72,6 +78,7 @@ const Projects = () => {
           </div>
         </section>
       </section>
+
       <Footer />
     </main>
   );

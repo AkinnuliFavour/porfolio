@@ -1,48 +1,43 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Card from "../components/Card";
+import ProjectCard from "../components/project-card/ProjectCard";
 
-const projects = [
+const featuredProjects = [
   {
     name: "CryptoFlow",
     description:
-      "A crypto-focused web app that aggregates live news from multiple sources and provides built-in portfolio tracking, helping users stay informed and manage their assets in one place. Built with React, TypeScript, TailwindCSS, and a Node.js/Express backend, the project deepened my understanding of TanStack Query v5 and refreshed my backend skills through hands-on debugging, optimization, and real-world data handling.",
+      "Crypto-focused platform that aggregates live news from multiple sources and provides built-in portfolio tracking—helping users stay informed and manage their assets in one place.",
     url: "https://crypto-flow-nine.vercel.app",
     logo: "/assets/cryptoflow-logo.ico",
-    screenshot: "/assets/cryptoflow-bg.png",
+    screenshots: [
+      "/assets/cryptoflow-bg.png",
+      "/assets/cryptoflow-bg.png",
+      "/assets/cryptoflow-bg.png",
+    ],
     tags: [
       "React",
       "TypeScript",
       "Tailwind CSS",
-      "Local Storage",
-      "Responsive Design",
       "Node.js",
       "Express.js",
-      "News API",
-      "CoinGecko API",
       "TanStack Query v5",
     ],
   },
   {
     name: "MovieBox",
     description:
-      "Discover the magic of cinema with my React-based movie details website. Seamlessly navigate through an extensive collection of films, exploring synopses, cast details, ratings, and more. With an intuitive user interface and responsive design, users can effortlessly dive into their favorite movies from any device.",
+      "Movie discovery platform with an extensive library of films, synopses, cast details, and ratings. Designed for seamless cinematic browsing across all screen sizes.",
     url: "https://movieinfo-2.vercel.app",
     logo: "/assets/movieinfo-logo.png",
-    screenshot: "/assets/movieinfo-bg.png",
-    tags: [
-      "React",
-      "TMDB API",
-      "Axios",
-      "Tailwind CSS",
-      "Responsive Design",
-      "Supabase",
+    screenshots: [
+      "/assets/movieinfo-bg.png",
+      "/assets/movieinfo-bg.png",
+      "/assets/movieinfo-bg.png",
     ],
+    tags: ["React", "TMDB API", "Axios", "Tailwind CSS", "Supabase"],
   },
 ];
 
@@ -51,8 +46,6 @@ const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    AOS.init({ once: true });
-    AOS.refresh();
   }, []);
 
   return (
@@ -114,17 +107,20 @@ const Home = () => {
           <p className="mb-[16px] lg:mb-[32px] font-bold text-[32px] lg:text-[48px] text-[#181818]">
             Selected Work
           </p>
-          {projects.map((project) => (
-            <Card
-              key={project.name}
-              name={project.name}
-              description={project.description}
-              url={project.url}
-              logo={project.logo}
-              screenshot={project.screenshot}
-              tags={project.tags}
-            />
-          ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {featuredProjects.map((project, index) => (
+              <ProjectCard
+                key={project.name}
+                name={project.name}
+                description={project.description}
+                url={project.url}
+                logo={project.logo}
+                screenshots={project.screenshots}
+                tags={project.tags}
+                animationDelay={index * 80}
+              />
+            ))}
+          </div>
         </section>
       </section>
       <section
