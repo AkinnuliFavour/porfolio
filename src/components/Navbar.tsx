@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import ActiveLink from "./ActiveLink";
+import { Link } from 'react-router-dom';
+import ActiveLink from './ActiveLink';
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[60px] px-4 mt-4 bg-white bg-opacity-25 hidden lg:flex justify-between text-lg font-medium rounded-xl">
+    <nav className="w-full h-[60px] px-4 mt-16 bg-white bg-opacity-25 hidden lg:flex justify-between text-lg font-medium rounded-xl">
       <ul className="flex items-center gap-[40px]">
         <ActiveLink to="/">
           <img
@@ -13,25 +13,13 @@ const Navbar = () => {
           />
         </ActiveLink>
         <li>
-          <ActiveLink
-            to="/about"
-          >
-            About
-          </ActiveLink>
+          <ActiveLink to="/about">About</ActiveLink>
         </li>
         <li>
-          <ActiveLink
-            to="/projects"
-          >
-            Projects
-          </ActiveLink>
+          <ActiveLink to="/projects">Projects</ActiveLink>
         </li>
         <li>
-          <ActiveLink
-            to="/contact"
-          >
-            Contact
-          </ActiveLink>
+          <ActiveLink to="/contact">Contact</ActiveLink>
         </li>
       </ul>
       <div className="flex items-center gap-[24px] drop-shadow-2xl">
@@ -40,7 +28,11 @@ const Navbar = () => {
           target="_blank"
           className="drop-shadow-2xl"
         >
-          <img src="/assets/LinkedIn.png" className="hover:scale-110 text-[#808080]" alt="" />
+          <img
+            src="/assets/LinkedIn.png"
+            className="hover:scale-110 text-[#808080]"
+            alt=""
+          />
         </Link>
         {/* <img src="/assets/X.png" alt="" /> */}
         <Link
@@ -48,7 +40,11 @@ const Navbar = () => {
           target="_blank"
           className="drop-shadow-2xl"
         >
-          <img src="/assets/Github.svg" className="hover:scale-110 text-[#808080]" alt="" />
+          <img
+            src="/assets/Github.svg"
+            className="hover:scale-110 text-[#808080]"
+            alt=""
+          />
         </Link>
       </div>
     </nav>
