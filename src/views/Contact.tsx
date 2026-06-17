@@ -1,7 +1,6 @@
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   useEffect(() => {
@@ -20,7 +19,7 @@ const Contact = () => {
         >
           <img src="/assets/favour-logo-white.svg" alt="" />
         </Link>
-        <section className="px-[16px] lg:px-[244px] lg:mt-[121px]">
+        <section className="px-[16px] lg:px-[244px] lg:mt-14">
           <h2 className="text-[48px] lg:text-[70px] font-extrabold text-[#181818]">
             Get in touch
           </h2>
@@ -30,7 +29,7 @@ const Contact = () => {
         </section>
         <hr className="w-full text-black opacity-10 mt-[60px]" />
       </div>
-      <section className="px-[16px] lg:px-[244px]">
+      <section className="px-[16px] lg:px-[244px] mb-24">
         <section className="mt-[20px] bg-[#F6F6F6] shadow-xl rounded-[12px]">
           <div className="flex justify-center py-[18px] border-b border-b-[rgba(255, 255, 255, 0.25)]">
             <h3 className="text-[16px] font-medium text-[#181818]">
@@ -109,7 +108,6 @@ const Contact = () => {
           </form>
         </section>
       </section>
-      <Footer />
     </main>
   );
 };

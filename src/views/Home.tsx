@@ -1,45 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import ProjectCard from '../components/project-card/ProjectCard';
-
-const featuredProjects = [
-  {
-    name: 'CryptoFlow',
-    description:
-      'Crypto-focused platform that aggregates live news from multiple sources and provides built-in portfolio tracking—helping users stay informed and manage their assets in one place.',
-    url: 'https://crypto-flow-nine.vercel.app',
-    logo: '/assets/cryptoflow-logo.ico',
-    screenshots: [
-      '/assets/cryptoflow-bg.png',
-      '/assets/cryptoflow-bg.png',
-      '/assets/cryptoflow-bg.png',
-    ],
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      'Node.js',
-      'Express.js',
-      'TanStack Query v5',
-    ],
-  },
-  {
-    name: 'MovieBox',
-    description:
-      'Movie discovery platform with an extensive library of films, synopses, cast details, and ratings. Designed for seamless cinematic browsing across all screen sizes.',
-    url: 'https://movieinfo-2.vercel.app',
-    logo: '/assets/movieinfo-logo.png',
-    screenshots: [
-      '/assets/movieinfo-bg.png',
-      '/assets/movieinfo-bg.png',
-      '/assets/movieinfo-bg.png',
-    ],
-    tags: ['React', 'TMDB API', 'Axios', 'Tailwind CSS', 'Supabase'],
-  },
-];
 
 const Home = () => {
   const navigate = useNavigate();
