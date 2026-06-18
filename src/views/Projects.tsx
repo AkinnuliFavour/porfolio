@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import Navbar from '../components/Navbar';
+import MobileNav from '../components/MobileNav';
 import PageTransition from '../components/PageTransition';
 import { projects } from '../utils/utils';
 import ProjectCard from '../components/project-card/ProjectCard';
@@ -19,15 +20,12 @@ const Projects = () => {
     <PageTransition>
       <main className="text-[#808080]">
         <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full flex flex-col">
-          <section className="px-[18px] lg:px-[244px]">
+          {/* Mobile collapsible nav */}
+          <MobileNav />
+
+          <section className="hidden lg:block px-[18px] lg:px-[244px]">
             <Navbar />
           </section>
-          <Link
-            to="/"
-            className="flex justify-center mb-[86px] mt-[32px] lg:hidden"
-          >
-            <img src="/assets/favour-logo-white.svg" alt="Home" />
-          </Link>
 
           {/* Page heading — staggered */}
           <motion.section

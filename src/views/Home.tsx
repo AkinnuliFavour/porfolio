@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion, useReducedMotion } from 'framer-motion';
 import Navbar from '../components/Navbar';
+import MobileNav from '../components/MobileNav';
 import PageTransition from '../components/PageTransition';
 import { fadeUp, staggerContainer } from '../utils/animations';
 
@@ -18,26 +19,17 @@ const Home = () => {
     <PageTransition>
       <main className="w-full text-[#808080]">
         <div className="bg-[url('/assets/background-gradient-top.png')] bg-center w-full h-[550px] flex flex-col">
-          <section className="px-[18px] lg:px-52 min-h-20">
+          {/* Mobile collapsible nav — rendered above the desktop bar */}
+          <MobileNav />
+
+          <section className="hidden lg:block px-[18px] lg:px-52 min-h-20">
             <Navbar />
           </section>
 
-          {/* Mobile logo — fades in independently */}
-          <motion.div
-            initial={shouldReduce ? false : { opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <Link
-              to="/"
-              className="flex justify-center mb-[245px] mt-[32px] lg:hidden h-1/4"
-            >
-              <img src="/assets/favour-logo-white.svg" alt="" />
-            </Link>
-          </motion.div>
+
 
           {/* Hero content — staggered entrance (Q1-B: no data-aos, fully Framer Motion) */}
-          <section className="flex justify-center min-h-[calc(100vh-100px)]">
+          <section className="flex justify-center mt-12 lg:min-h-[calc(100vh-100px)]">
             <motion.section
               className="w-full px-[16px] lg:max-w-[65%] lg:px-0 flex flex-col justify-center"
               variants={staggerContainer(0.11, 0.15)}
@@ -52,7 +44,14 @@ const Home = () => {
               </motion.h2>
 
               <motion.h2
-                className="text-[48px] lg:text-[70px] font-extrabold"
+                className="lg:hidden text-[32px] font-extrabold mb-4"
+                variants={fadeUp}
+              >
+                I'm{' '} <p className="lg:hidden"> Favour Akinnuli</p>
+              </motion.h2>
+
+              <motion.h2
+                className="hidden lg:block text-[48px] lg:text-[70px] font-extrabold"
                 variants={fadeUp}
               >
                 I'm{' '}
