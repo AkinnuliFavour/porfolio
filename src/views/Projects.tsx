@@ -46,7 +46,7 @@ const Projects = () => {
               className="text-[15px] lg:text-[24px] font-normal"
               variants={fadeUp}
             >
-              Projects and ideas I've worked on
+              Projects and ideas I've worked on recently
             </motion.p>
           </motion.section>
 
